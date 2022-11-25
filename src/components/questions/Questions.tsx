@@ -74,17 +74,17 @@ export const Questions = ({ isRunning, setIsRunning }: QuestionsProps) => {
     return (
         <Container>
             <Grid container direction='column' alignItems='center' rowSpacing='12'>
-                <Grid item container direction='row' justifyContent='space-between' alignItems='center'>
-                    {!isRunning && (
+                {!isRunning && (
+                    <Grid item container direction='row' justifyContent='space-between' alignItems='center'>
                         <Grid item xs={3}>
                             <Typography variant='overline'>Last run score: {formattedScore}</Typography>
                         </Grid>
-                    )}
-
-                    <Grid item xs={9}>
-                        <AddQuestionForm onAdd={addQuestion} />
+                        <Grid item xs={9}>
+                            <AddQuestionForm onAdd={addQuestion} />
+                        </Grid>
                     </Grid>
-                </Grid>
+                )}
+
                 <Grid item>
                     {isRunning ? (
                         <Box sx={{ display: 'flex' }}>
