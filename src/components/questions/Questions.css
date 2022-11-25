@@ -1,0 +1,26 @@
+.dialogContainerClassname {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.selectScore {
+    background-color: darksalmon;
+    color: rgb(19, 134, 29);
+    width: 100%;
+}
+
+.align-text-left {
+    text-align: left;
+}
+
+.answer-score-cell {
+    width: 100%;
+		padding: 0%;
+}
+
+.grid {
+    block-size: 300px;
+}
